@@ -1,0 +1,21 @@
+{% set position = content.field_icon_position.0 %}
+
+<div class="thumbnail-left-content" >
+    {% if 'Right' in position %}
+        <div data-abc="1" data-position={{ position }}>
+            <h6><a href="#">{{ content.field_choose_us_title }}</a></h6>
+            <p>{{ content.field_choose_us_summery}}</p>
+        </div>
+        <div>
+            {{ content.field_choose_us_icon}}
+        </div>
+    {% else %}
+        <div data-position={{ position }}>
+            {{ content.field_choose_us_icon }}
+        </div>
+        <div>
+            <h6><a href="#">{{ content.field_choose_us_title }}</a></h6>
+            <p>{{ content.field_choose_us_summery }}</p>
+        </div>
+    {% endif %}
+</div>

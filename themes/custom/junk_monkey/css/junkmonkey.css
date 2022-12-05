@@ -1,0 +1,828 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+html{
+	font-size: 100%;
+}
+body{
+	font-family: poppins;
+}
+
+:root {
+	--color-theme-red: #ED1C24;
+	--color-theme-green: #50ae1e;
+	--color-theme-blue: #5f1586;
+	--color-secondary: #b743f5;
+}
+
+.theme-red .primary-btn{
+	padding: 1rem 1.5rem;
+	background-color: var(--color-theme-red);
+	color: #fff;
+	text-decoration: none;
+}
+.theme-red .primary-btn:hover {
+	color: #fff;
+	background-color: var(--color-theme-red);
+}
+
+.theme-green .primary-btn{
+	padding: 1rem 1.5rem;
+	background-color: var(--color-theme-green);
+	color: #fff;
+	text-decoration: none;
+	margin: 1rem 0;
+}
+.theme-green .primary-btn:hover {
+	color: #fff;
+	background-color: #3b8614;
+}
+
+.theme-blue .primary-btn{
+	padding: 1rem 1.5rem;
+	background-color: var(--color-theme-blue);
+	color: #fff;
+	text-decoration: none;
+}
+.theme-blue .primary-btn:hover {
+	color: #fff;
+	background-color: var(--color-theme-blue);
+}
+
+.secoundary-btn{
+	padding: 1rem 1.5rem;
+	background-color: #841eba;
+	color: #fff;
+	text-decoration: none;	
+}
+.secoundary-btn:hover{
+	color: #fff;
+	background-color: #5f1586;
+}
+
+.black-btn{
+	padding: 1rem 1.5rem;
+	background-color: #000;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 500;
+}
+.black-btn:hover{
+	background-color: #f1f1f1;
+	color: #000;
+}
+.theme-red .primary-text{
+	color: var(--color-theme-red);
+}
+.theme-green .primary-text{
+	color: var(--color-theme-green);
+}
+.theme-blue .primary-text{
+	color: var(--color-theme-blue);
+}
+
+.white-btn{
+	padding: 1rem 1.5rem;
+	background-color: #ffffffc7;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.theme-red .white-btn{
+	color: var(--color-theme-red);
+}
+.theme-green .white-btn{
+	color: var(--color-secondary);
+}
+.theme-blue .white-btn{
+	color: var(--color-theme-blue);
+}
+
+/*header*/
+
+
+.header-top{
+	background-image: url("http://chicagojunk.net/wp-content/uploads/2022/04/455--scaled.jpg");
+	padding: 2rem 0;
+}
+.header-top-logo{
+	display: none;
+	text-align: center;
+}
+.header-top-logo img{
+	width: 150px;
+}
+.brand-logo img{
+	width: 200px;
+	height: 200px;
+	margin-bottom: 100px;
+}
+.social-icon{
+	display: flex;
+	align-items: center;
+}
+.social-icon i{
+	padding: 0.75rem;
+	font-size: 20px;
+	margin: 1rem;
+}
+.theme-red .social-icon i{
+	color: var(--color-theme-red);
+	border: 1px solid var(--color-theme-red);
+}
+.theme-green .social-icon i{
+	color: var(--color-theme-green);
+	border: 1px solid var(--color-theme-green);
+}
+.theme-blue .social-icon i{
+	color: var(--color-theme-blue);
+	border: 1px solid var(--color-theme-blue);
+}
+
+.social-icon-content{
+	color: #fff;
+}
+.social-icon-content a{
+	text-decoration: none;
+	color: #fff;
+}
+.theme-red .social-icon-content a:hover{
+	color: var(--color-theme-red);
+}
+.theme-green .social-icon-content a:hover{
+	color: var(--color-theme-green);
+}
+.theme-blue .social-icon-content a:hover{
+	color: var(--color-theme-blue);
+}
+
+.header-bottom{
+	background-color: var(--color-primary);
+	padding: 0;
+	height: 65px;
+}
+.theme-red .header-bottom{
+	background-color: var(--color-theme-red);
+}
+.theme-green .header-bottom{
+	background-color: var(--color-theme-green);
+}
+.theme-blue .header-bottom{
+	background-color: var(--color-theme-blue);
+}
+
+
+.header-bottom-links li a{
+	color: #fff;
+	font-weight: 600;
+	padding: 16px;
+}
+
+.header-bottom a:hover{
+	color: #fff;
+	/*background-color: #cb2701;*/
+}
+.header-bottom-social-links ul{
+	display: flex;
+}
+.header-bottom-social-links ul li{
+	list-style: none;
+	display: inline;
+	padding: 10px;
+	margin-top: 5px;
+}
+.header-bottom-social-links ul li a{
+	text-decoration: none;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #fff;
+}
+
+/*top banner*/
+
+.top-banner{
+	background:url(http://junkmonkeysco.com/wp-content/uploads/2022/05/boulder2.jpg)  rgba(0,0,0,0.6);
+	background-blend-mode: overlay;
+	color: #fff;
+	padding: 4rem 0;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 10%;
+}
+
+.top-banner h4{
+	color: var(--color-secondary);
+	padding: 1rem 0;
+}
+/*.theme-red .top-banner-left h6{
+	color: var(--color-theme-red);
+}
+.theme-green .top-banner-left h6{
+	color: var(--color-theme-green);
+}
+.theme-blue .top-banner-left h6{
+	color: var(--color-theme-blue);
+}*/
+/*.top-banner-right-wrap{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}*/
+
+/*.top-banner-right{
+	text-align: center;
+	justify-content: center;
+}
+.top-banner-right p{
+	margin: 2.5rem 0;
+}*/
+
+
+.card-section{
+	background-color: #F1F1F1;
+	padding-bottom: 2rem;
+}
+.card-wrap{
+	background-color: #fff;
+	padding: 1rem;
+	position: relative;
+	top: -20%;
+	height: 98%;
+}
+.card-wrap-head{
+	text-align: center;
+}
+.card-wrap-head img{
+	width: 50%;
+	margin: auto;
+}
+.card-wrap p{
+	padding: 0.5rem;
+    word-spacing: 5px;
+}
+.card-wrap h5 a{
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+	padding: 0.5rem;
+}
+
+
+.call-us{
+	background-image: url("img/background-2.png");
+	padding: 2rem 0;
+}
+.call-us-content{
+	color: #fff;
+	text-align: center;
+}
+.call-us-content h2{
+	font-weight: bold;
+}
+
+.call-us-btn{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.text-us-btn{
+	display: flex;
+	justify-content: center;
+}
+
+
+.about{
+	padding: 5rem 0;
+}
+
+.theme-red .about-left h6{
+	color: var(--color-theme-red);
+}
+.theme-green .about-left h6{
+	color: var(--color-theme-green);
+}
+.theme-blue .about-left h6{
+	color: var(--color-theme-blue);
+}
+
+.about-right{
+	position: relative;
+	height: 700px;
+}
+
+.about-right-top-content{
+	width: 25%;
+	padding: 3rem;
+	text-align: center;
+	color: #fff;
+	position: absolute;
+	left: 20%;
+	margin-top: 5%;
+	z-index: 1;
+	border: 5px solid #fff;
+}
+.theme-red .about-right-top-content{
+	background-color: var(--color-theme-red);
+}
+.theme-green .about-right-top-content{
+	background-color: var(--color-theme-green);
+}
+.theme-blue .about-right-top-content{
+	background-color: var(--color-theme-blue);
+}
+
+
+.about-right-top-img img{
+	width: 65%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 85%;
+}
+.about-right-bottom-img img{
+	width: 35%;
+	position: absolute;
+	bottom: -5%;
+	left: 15%;
+}
+
+
+.theme-red .accordion-flush .accordion-item .accordion-button{
+	color: var(--color-theme-red);
+}
+.theme-green .accordion-flush .accordion-item .accordion-button{
+	color: var(--color-secondary);
+}
+.theme-blue .accordion-flush .accordion-item .accordion-button{
+	color: var(--color-theme-blue);
+}
+
+
+.steps{
+	background-image: url(http://junkmonkeysco.com/wp-content/uploads/2022/05/17180113.jpg);
+	padding: 2rem 0;
+	color: #fff;
+}
+.steps-content{
+	text-align: center;
+	padding: 1rem;
+}
+.steps-content img{
+	width: 150px;
+	margin: auto;
+}
+.steps h6{
+	color: var(--color-theme-green);
+}
+.galary{
+	padding: 2rem 0;
+}
+.galary img{
+	height: 100%;
+}
+
+
+.services{
+	background: url(img/278568463_348197364038049_8093230302438749097_n.jpg)  rgba(0,0,0,0.4);
+	background-blend-mode: overlay;
+	color: #fff;
+	padding: 3rem 0;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 10%;
+}
+
+
+.services-left h2{
+	padding: 1rem 0;
+	font-weight: bold;
+	color: var(--color-secondary);
+	font-size: xxx-large;
+}
+.services-right-wrap{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.primary-service{
+	padding: 5rem 0;
+}
+.primary-service h2{
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 1rem;
+}
+.primary-service-content{
+	display: flex;
+	border-bottom: 1px solid grey;
+	padding: 0.5rem;
+}
+.primary-service-content i{
+	padding: 0 0.5rem;
+}
+.theme-red .primary-service-content i{
+	color: var(--color-theme-red);
+}
+.theme-green .primary-service-content i{
+	color: #f59e34;
+}
+.theme-blue .primary-service-content i{
+	color: var(--color-theme-blue);
+}
+.primary-service-content h6{
+	font-weight: bold;
+}
+
+
+
+.other-services{
+	background-image: url("img/background.jpg");
+	padding: 3rem 0;
+	color: #fff;
+}
+.other-services-head{
+	text-align: center;
+}
+.other-services-head img{
+	width: 100px;
+	margin: auto;
+}
+.other-services-head h5{
+	color: var(--color-theme-green);
+	padding: 1rem 0;
+}
+
+.other-services-content{
+	display: flex;
+}
+.other-services-content i{
+	color: var(--color-secondary);
+	padding: 0 0.5rem;
+}
+
+
+.contact-us{
+	background: url(http://chicagojunk.net/wp-content/uploads/2022/04/builderon-img50.png) rgba(241,241,241,0.75);
+	background-blend-mode: overlay;
+	padding: 3rem 0;
+}
+.contact-us-form input, .contact-us-form textarea{
+	border: none;
+	width: 100%;
+}
+.theme-red .contact-us-content h6{
+	color: var(--color-theme-red);
+}
+.theme-green .contact-us-content h6{
+	color: var(--color-secondary);
+}
+.theme-blue .contact-us-content h6{
+	color: var(--color-theme-blue);
+}
+
+.contact-us-content-bottom{
+	display: flex;
+}
+.contact-us-content-bottom i{
+	font-size: 40px;
+	padding-right: 12px	;
+}
+.theme-red .contact-us-content-bottom i{
+	color: var(--color-theme-red);
+}
+.theme-green .contact-us-content-bottom i{
+	color: var(--color-secondary);
+}
+.theme-blue .contact-us-content-bottom i{
+	color: var(--color-theme-blue);
+}
+.contact-us-icon i{
+	padding: 10px;
+	background-color: #000;
+	color: #fff;
+	margin: 5px;
+}
+.theme-red .contact-us-icon i:hover{
+	background-color: var(--color-theme-red);
+}
+.theme-green .contact-us-icon i:hover{
+	background-color: var(--color-secondary);
+}
+.theme-blue .contact-us-icon i:hover{
+	background-color: var(--color-theme-blue);
+}
+
+.bottom-icon{
+	background-color: #f1f1f1;
+	padding: 0.5rem;
+}
+.theme-red .bottom-icon i{
+	color: var(--color-theme-red);
+}
+.theme-green .bottom-icon i{
+	color: #f59e34;
+}
+.theme-blue .bottom-icon i{
+	color: var(--color-theme-blue);
+}
+
+
+
+
+.thumbnail{
+	padding: 3rem 0;
+	background-color: #f1f1f1;
+}
+.thumbnail-top{
+	text-align: center;
+}
+.theme-red .thumbnail-top h6{
+	color: var(--color-theme-red);
+}
+.theme-green .thumbnail-top h6{
+	color: var(--color-theme-green);
+}
+.theme-blue .thumbnail-top h6{
+	color: var(--color-theme-blue);
+}
+
+.thumbnail-left{
+	padding: 1rem 0;
+}
+.thumbnail-left-content{
+	display: flex;
+	padding: 1rem;
+}
+.thumbnail-left-content h6 a{
+	text-decoration: none;
+	color: #000;
+}
+.thumbnail-left-content img{
+	/* width:100px */
+}
+
+.youtube-placeholder{
+	background-image:url('img/video-img.jpg');
+	height: 315px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.youtube-placeholder i{
+	display: block;
+	font-size: 130px;
+}
+.video-section{
+	background-image: url("img/background.jpg");
+	padding: 3rem 0;
+	color: #fff;
+}
+.video-section h6{
+	color: var(--color-theme-green);
+}
+.video-section a{
+	text-decoration: none;
+	color: var(--color-theme-green);
+}
+.video-section img{
+	height: 315px;
+	width: 100%;
+}
+.video-section iframe{
+	width: 100%;
+	height: 100%;
+}
+.book-consultation{
+	background-image: url("img/background-2.png");
+	padding: 2rem 0;
+}
+
+.book-consultation h2{
+	text-align: center;
+	color: #fff;
+}
+/*footer*/
+
+.footer-top{
+	padding: 2rem;
+	text-align: center;
+	margin-top: -12%;
+	margin-bottom: 5%;
+}
+.theme-red .footer-top{
+	background-color: var(--color-theme-red);
+}
+.theme-green .footer-top{
+	background-color: #841eb9fa;
+	opacity: 0.94;
+}
+.theme-blue .footer-top{
+	background-color: var(--color-theme-blue);
+}
+
+
+.footer-bg{
+	background-image: url("http://chicagojunk.net/wp-content/uploads/2022/04/455--scaled.jpg");
+	color: #fff;
+	padding: 2rem 0 0 0;
+}
+
+.footer-logo img{
+	width: 90%;
+}
+.footer-social-icons a{
+	padding: 7px 10px;
+	margin: 0 5px;
+	text-decoration: none;
+	color: #fff;
+	border-radius: 5px;
+}
+.theme-red .footer-social-icons a{
+	background-color: var(--color-theme-red);
+}
+.theme-green .footer-social-icons a{
+	background-color: var(--color-secondary);
+}
+.theme-blue .footer-social-icons a{
+	background-color: var(--color-theme-blue);
+}
+
+.footer-links a{
+	text-decoration: none;
+	color: #fff;
+}
+.theme-red .footer-links a:hover{
+	color: var(--color-theme-red);
+}
+.theme-green .footer-links a:hover{
+	color: #fff;
+}
+.theme-blue .footer-links a:hover{
+	color: var(--color-theme-blue);
+}
+.footer-links a p i{
+	color: var(--color-secondary);
+}
+.footer-links a p i:hover{
+	color: #fff;
+}
+
+.footer-links h4{
+	color: var(--color-secondary);
+}
+
+.fixed-btn img{
+	width: 50px;
+    position: fixed;
+    right: 3%;
+    bottom: 2%;
+    border-radius: 50px;
+    padding: 5px;
+    background-color: #fff;
+}
+
+/*.theme-red .fixed-btn img{
+	background-color: var(--color-theme-red);
+}
+.theme-green .fixed-btn img{
+	background-color: var(--color-theme-green);
+}
+.theme-blue .fixed-btn img{
+	background-color: var(--color-theme-blue);
+}*/
+
+.footer-bottom{
+	margin-top: 2rem;
+	padding-top: 1rem;
+	border-top: 1px solid grey;
+}
+
+
+/*media queries*/
+
+
+@media screen and (max-width: 1025px) {
+	.footer-top {
+		margin-top: -16%;
+	}
+	.top-banner{
+		padding-bottom: 15%;
+	}
+	.social-icon-content a h5{
+		font-size: 15px;
+	}
+	.social-icon i{
+		padding: 0.5rem;
+		font-size: 15px;
+		margin: 0.5rem;
+	}
+	.card-wrap-head img {
+	    width: 40px;
+	    margin-right: 5px;
+		margin: auto;
+	}
+	.card-wrap-head h5 a{
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 992px){
+	.footer-logo img {
+	    width: 45%;
+	}
+	.brand-logo{
+		display: none;
+	}
+}
+
+
+@media screen and (max-width: 769px) {
+	.top-banner {
+		background-attachment: inherit;
+		font-size: 75%;
+		padding-bottom: 20%;
+	}
+	.footer-top {
+		margin-top: -13%;
+	}
+	.services {
+		padding-bottom: 15%;
+	}
+	.about-right{
+		display: none;
+	}
+	.top-banner-content{
+		text-align: center;
+	}
+}
+
+
+@media screen and (max-width: 426px) {
+	.footer-top {
+		margin-top: -25%;
+	}
+	.social-icon-content a h5{
+		font-size: 13px;
+	}
+	.social-icon-content p{
+		font-size: 11px;
+	}
+	.header-bottom-social-links ul li a img{
+		width: 30px;	
+	}
+	
+	.services {
+		padding-bottom: 20%;
+	}
+	.header-top-content{
+		display: none;
+	}
+	.header-top-logo{
+		display: block;
+	}
+	.primary-btn{
+		font-size: small;
+	}
+}
+
+@media screen and (max-width: 321px) {
+	.footer-top {
+		margin-top: -30%;
+	}
+	.top-banner{
+		padding-bottom: 30%;
+	}
+	.social-icon i{
+		padding: 0.4rem;
+		font-size: 12px;
+		margin: 0.2rem;
+	}
+	.social-icon-content a h5{
+		font-size: 10px;
+	}
+	.services {
+		padding-bottom: 40%;
+	}
+}
+.navbar{
+	margin-bottom: 0;
+}
+.user-login-form{
+	width: 300px;
+    margin: 0 auto;
+    margin-bottom: 106px;
+    margin-top: 38px;
+}
+
+
+.header-top-logo .pull-left{
+	float: none !important;
+}
+.w-100{
+	display: block;
+	width: 100%;
+}

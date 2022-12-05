@@ -1,0 +1,14 @@
+<div class="about-accordion">
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-heading{{ paragraph.index}}">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse{{ paragraph.index}}" aria-expanded="false" aria-controls="flush-collapse{{ paragraph.index}}">
+               {{ content.field_title}}
+                  </button>
+            </h2>
+            <div id="flush-collapse{{ paragraph.index}}" class="accordion-collapse collapse" aria-labelledby="flush-heading{{ paragraph.index}}" data-bs-parent="#accordionFlushExample" >
+                  <div class="accordion-body">{{ content.field_description }}</div>
+            </div>
+        </div>
+    </div>
+</div>

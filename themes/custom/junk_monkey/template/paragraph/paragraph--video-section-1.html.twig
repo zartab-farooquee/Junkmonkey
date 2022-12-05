@@ -1,0 +1,22 @@
+<section class="video-section" style="background-image:url('{{ content.field_background_image.0 }}')">
+	<div class="container">
+		<div class="row">
+			<div class="text-center py-3">
+				<h2>{{ content.field_title}}</h2>
+			</div>
+			<div class="col-lg-6">
+				<p>{{ content.field_description }}</p>
+				
+			</div>
+			<div class="col-lg-6">
+				<div class="video-section-img" style="background-image:url('{{ content.field_thumbnail.0 }}')" >
+					<div class="youtube-placeholder">
+						<i class="fa-regular fa-circle-play fa-3x" data-video={{ content.field_video_url.0['#url'] }}></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+

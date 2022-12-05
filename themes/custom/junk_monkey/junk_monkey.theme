@@ -1,0 +1,54 @@
+<?php
+
+function junk_monkey_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id = NULL)
+{
+    // Work-around for a core bug affecting admin themes. See issue #943212.
+    if (isset($form_id)) {
+        return;
+    }
+    $form['phone_field'] = array(
+        '#type'          => 'textfield',
+        '#title'         => t('Phone Number'),
+        '#default_value' => theme_get_setting('phone_field'),
+        '#description'   => t("Enter Phone"),
+    );
+    $form['email_field'] = array(
+        '#type'          => 'textfield',
+        '#title'         => t('Email '),
+        '#default_value' => theme_get_setting('email_field'),
+        '#description'   => t("Enter Email URL"),
+    );
+
+    $form['facebook_url'] = array(
+        '#type'          => 'textfield',
+        '#title'         => t('Facebook URL'),
+        '#default_value' => theme_get_setting('facebook_url'),
+        '#description'   => t("Enter Facebook URL"),
+    );
+    $form['instagram_url'] = array(
+        '#type'          => 'textfield',
+        '#title'         => t('Instagram URL'),
+        '#default_value' => theme_get_setting('instagram_url'),
+        '#description'   => t("Enter Instagram  URL"),
+    );
+   
+   
+}
+
+function junk_monkey_preprocess_page(&$variable)
+{
+    $variable['phone_field'] = theme_get_setting('phone_field');
+    $variable['email_field'] = theme_get_setting('email_field');
+    $variable['facebook_url'] = theme_get_setting('facebook_url');
+    $variable['instagram_url'] = theme_get_setting('instagram_url');
+}
+function junk_monkey_preprocess_field(&$variables)
+{
+    if ($variables['field_name'] == 'field_accordion_section' || $variables['field_name'] == 'field_service_inner' ) {
+
+        foreach ($variables['items'] as $idx => $item) {
+            $variables['items'][$idx]['content']['#paragraph']->index = $idx;
+        }
+    }
+}
+

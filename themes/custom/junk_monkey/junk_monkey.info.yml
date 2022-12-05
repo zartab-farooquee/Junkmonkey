@@ -1,0 +1,25 @@
+name: junk_theme
+type: theme
+desciption: new theme
+core_version_requirement: ^8 || ^9
+base theme: bootstrap
+screenshot: screenshot.png
+
+
+libraries:
+  - junk_monkey/main-library
+
+regions:
+  topbar_info: Top Bar Info 
+  site_branding: Site Branding
+  main_navbar: Main Navbar
+  social_links: Social Links 
+  content: Content
+  footer_top: Footer Top
+  footer_first: Footer First
+  footer_second: Footer Second
+  footer_third: Footer Third
+  footer_bottom_first: Footer Bottom First
+  footer_bottom_second: Footer Bottom Second
+  
+

@@ -1,0 +1,100 @@
+<header>
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 pb-3">
+
+                </div>
+
+                <div class="col-lg-8">
+                    <div class="row header-top-content">
+                        {{ page.topbar_info}}
+                    </div>
+                </div>
+            </div>
+            <div class="header-top-logo">
+				{{ page.site_branding }}
+			</div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light header-bottom">
+        <div class="container">
+            <div class="brand-logo">
+                {{ page.site_branding }}
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                {{ page.main_navbar}}
+            </div>
+            <div class="header-bottom-social-links">
+                <ul>
+                    <li>
+                        <a href="{{ phone_field }}">
+                            <img src="/themes/custom/junk_monkey/img/header-icon-1.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ email_field }}">
+                            <img
+                                src="/themes/custom/junk_monkey/img/header-icon-2.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ facebook_url }}">
+                            <img
+                                src="/themes/custom/junk_monkey/img/header-icon-3.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ instagram_url }}">
+                            <img
+                                src="/themes/custom/junk_monkey/img/header-icon-4.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+{{ page.content }}
+
+<footer>
+	<div class="footer-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 mx-auto">
+					{{ page.footer_top }}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="footer-logo">
+						{{ page.footer_first }}
+					</div>
+				</div>
+				<div class="col-lg-4">
+					{{ page.footer_second }}
+				</div>
+				<div class="col-lg-4 footer-links">
+					{{ page.footer_third }}
+				</div>
+				<span class="fixed-btn">
+					<a href="#">
+						<img src="https://cdn.userway.org/widgetapp/images/body_bl.svg">
+					</a>
+				</span>
+			</div>
+			<div class="row footer-bottom">
+				<div class="col-lg-6">
+					{{ page.footer_bottom_first }}
+				</div>
+				<div class="col-lg-6">
+					{{ page.footer_bottom_second }}
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
